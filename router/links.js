@@ -40,7 +40,7 @@ router.route('/add').post(async (req, res) =>{
 
     newLink.save()
         .then(()=>{
-            res.json(`http://localhost:5000/${newShortLink}`);
+            res.json(`https://fierce-waters-28227.herokuapp.com/${newShortLink}`);
         })
         .catch(err => res.json("Error: " + err));
 })
